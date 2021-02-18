@@ -1,8 +1,9 @@
 require "pry"
 
 def run_guessing_game
-  num = rand(1..6).to_s
-  input = gets
+  num = rand(1..6)
+  num = num.to_s
+  input = gets.chomp
   binding.pry
   
   if input == "exit"
